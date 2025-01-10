@@ -1,0 +1,21 @@
+/* styles.css */
+.floating-widget {
+    position: fixed;
+    bottom: 20px; /* Jarak dari bawah halaman */
+    right: 30px;  /* Jarak dari sisi kanan halaman */
+    width: 130px;  /* Lebar widget */
+    height: 60px; /* Tinggi widget */
+    z-index: 1000; /* Menempatkan widget di atas elemen lain */
+    cursor: pointer; /* Menunjukkan bahwa widget dapat diklik */
+    transition: transform 0.3s ease; /* Transisi animasi saat hover */
+}
+
+.floating-widget img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Opsional: membuat gambar berbentuk lingkaran */
+}
+
+.floating-widget:hover {
+    transform: scale(1.1); /* Membesarkan widget saat hover */
+}
